@@ -16,6 +16,7 @@ asciiArt = r"""
                         -----HW-------------------                                        
 
                                            """
+print(asciiArt)
 
 if len(sys.argv) < 2:
     print(helpTxt)
@@ -27,8 +28,6 @@ parser.add_option("-m","--message",dest="msg")
 parser.add_option("-n","--newfilename",dest="newFileName")
 
 (option, args) = parser.parse_args()
-
-print(asciiArt)
 
 stego  = imageSteg.ImageSteg()
 
